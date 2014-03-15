@@ -20,7 +20,6 @@ function onet_analyze_dynamics(pa,pb,res)
             end
         end
     end
-    onet_integrate(pa,pb,pb,pa,500);
     hold off
 
 end
