@@ -16,6 +16,7 @@ Other functions in the directory are:
   * `onet_model` implements the functions of the model and is constructed so that it's easy to pass to ODE integrators in MATLAB, e.g. ode45
   * `onet_quiver` displays a quiver plot (depicting the vector field of the ODE with given parameters `pa` and `pb`)
   * `onet_analyze_dynamics` displays a quiver plot using `onet_quiver` and plots several trajectories starting at various points in the state space (using `onet_integrate`)
+  * `onet_linear_trajectories` displays graphs of the dynamics for varying values of `pa` with `pb=c*pa` as subplots for examination, this make the difference between the second order (`c=1`) and first order (`c not equal to 1`)
 
 Note: `onet_quicklook` simply binds `onet_analyze_dynamics` to the UI controls for changing the parameters and updates the plot accordingly.
 
